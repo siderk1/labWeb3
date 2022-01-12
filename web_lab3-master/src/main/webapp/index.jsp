@@ -1,0 +1,1 @@
+<% response.sendRedirect("/lab3/start");%>

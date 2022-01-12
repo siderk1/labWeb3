@@ -1,0 +1,92 @@
+.tabs {
+    position: relative;
+    margin: 0;
+    padding: 15px;
+}
+
+.tabs li {
+    display: inline-block;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+
+.tabs li a {
+    display: block;
+    padding: 10px 15px;
+    background: rgba(219,219,219,1);
+    color: #4B5056;
+}
+
+.tabs a + div {
+    position: absolute;
+    left: 0;
+    height: 0;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.tabs :target a { background: rgba(219,219,219,0); }
+
+.tabs :target a + div {
+    height: 100%;
+    overflow: visible;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.item{
+    border: 1px solid black;
+
+}
+
+
+.y{
+
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-top: 5%;
+
+    margin-bottom: 5%;
+
+}
+#div1{
+    grid-row-start:1;
+    grid-row-end: 4;
+}
+#div2{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    align-items: end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.ytext{
+    align-self: center;
+}
+#div3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#div4{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#div5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#div6{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
